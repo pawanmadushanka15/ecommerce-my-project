@@ -1,9 +1,7 @@
-// src/Components/Item/Item.jsx
-
 import React from 'react'
 import './Item.css'
 
-const Item = ({ id, name, image, new_price, old_price }) => {
+const Item = ({ name, image, new_price, old_price }) => {
   return (
     <div className="item">
       <img src={image} alt={name} />
