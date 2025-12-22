@@ -1,48 +1,124 @@
-.hero{
-    height: 100vh;
-    background: linear-gradient(180deg,#fde1ff,#e1ffea22, 60%);
-    display: flex;
-
-
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fde1ff 0%, #e1ffea 100%);
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  box-sizing: border-box;
 }
-.hero-left{
+
+/* LEFT SIDE */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  line-height: 1.15;
+}
+
+.hero-left h2 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* TEXT BLOCK */
+.hero-left p {
+  font-size: 88px;
+  font-weight: 800;
+  color: #111;
+  margin: 0;
+}
+
+/* "new 👋" row */
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-hand-icon p {
+  font-size: 88px;
+}
+
+.hero-hand-icon img {
+  width: 70px;
+}
+
+/* BUTTON */
+.hero-latest-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 36px;
+  margin-top: 25px;
+  border-radius: 50px;
+  background: #ff4141;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.hero-latest-btn img {
+  width: 18px;
+}
+
+.hero-latest-btn:hover {
+  background: #e63a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 65, 65, 0.35);
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 85%;
+  max-width: 520px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .hero-left p {
+    font-size: 64px;
+  }
+
+  .hero-hand-icon {
+    justify-content: center;
+  }
+
+  .hero-latest-btn {
+    margin: 25px auto 0;
+  }
+
+  .hero-right img {
+    width: 70%;
+    margin-top: 40px;
+  }
+}
+
+
+.hero-right{
     flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
-}
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
-    font-weight: 700;
-}
-.hero-left p{
-    color: #171717;
-    font-size: 100px;
-    font-weight: 700;
-}
-.hero-hand-icon{
-    display: flex;
     align-items: center;
-    gap: 20px;
-}
-.hero-hand-icon img{
-    width: 105px;
-}
-.hero-latest-btn{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
 }
