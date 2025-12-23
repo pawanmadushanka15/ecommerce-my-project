@@ -1,0 +1,81 @@
+.offers {
+  width: 70%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 60px 140px;
+  margin-bottom: 150px;
+  border-radius: 24px;
+
+  /* Soft premium gradient */
+  background: linear-gradient(
+    180deg,
+    #fde1ff 0%,
+    #e1ffea 60%
+  );
+
+  /* Soft shadow for depth */
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT SIDE */
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.offers-left h1 {
+  color: #171717;
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.offers-left p {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 420px;
+}
+
+/* BUTTON */
+.offers-left button {
+  width: 280px;
+  height: 70px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ff4141, #ff6a6a);
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.offers-left button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 65, 65, 0.45);
+}
+
+/* RIGHT SIDE */
+.offers-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+/* Image inside offers-right */
+.offers-right img {
+  max-width: 420px;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.15));
+}
